@@ -23,7 +23,7 @@ function showError(error) {
 //Forecast 5 day / 3 hours weather
 function forecast(location, cityName) {
 
-  let api2 = `http://api.openweathermap.org/data/2.5/${location}&appid=e520e248b2ce5d233b45cf74840ed29c&units=metric`;
+  let api2 = `https://api.openweathermap.org/data/2.5/${location}&appid=e520e248b2ce5d233b45cf74840ed29c&units=metric`;
   fetch(api2).then(function (response) {
 
       let data2 = response.json();
@@ -115,7 +115,7 @@ function forecast(location, cityName) {
 
 // Weather with lat and long
 function getWeather(latitude, longitude) {
-  let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=metric`;
+  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=metric`;
   console.log(api);
   fetch(api).then(function (response) {
       let data = response.json();
@@ -146,7 +146,7 @@ function getWeather(latitude, longitude) {
 function bySearch(){
   let cityName = $('#city-name').val();
 
-  api = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric`;
+  api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&units=metric`;
   fetch(api).then(function (response) {
       let data = response.json();
       return data;
