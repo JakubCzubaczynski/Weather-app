@@ -1,0 +1,64 @@
+body{
+  background-color: #84B7C5;
+  font-family: Montserrat;
+}
+#main .col{
+  min-height:50vh;
+  background-color: white;
+
+}
+form{
+text-align:center;
+}
+.weather-display{
+  background-color: #6B9FB5
+}
+.icon-img{
+  display: block;
+  margin:0 auto;
+}
+.check{
+  margin-top:20px;
+}
+
+.forecast{
+  min-height: 100vh;
+}
+.forecast-row h4{
+  text-align: center;
+  padding:20px 0 0  0;
+}
+.forecast-row h5{
+  text-align: center;
+ 
+}
+.hour-background{
+  margin:10px;
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: 0px 0px 20px 0px rgb(70 143 175);
+}
+.hour-background p{
+  margin:0;
+}
+.hour-wrapper{
+  
+  text-align: center;
+ margin:0 auto;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.forecast-row{
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top:30px;
+}
+.lead-hour{
+  font-weight:300;
+  font-size:1.6rem;
+}
+.temp{
+  font-weight: 800;
+  font-size: 2rem;
+}
