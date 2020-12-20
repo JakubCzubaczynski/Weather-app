@@ -26,11 +26,14 @@
     <div class="container">
       <div class="row">
         <div class="col rounded mt-5">
+          
           <form class="mx-2 my-4">
 
             <label for="fname">Enter City Name:</label><br>
             <input type="text" id="city-name" class="lol" placeholder="City name..."><br>
-            <input class="check" type="submit" value="Sprawdź">
+            <input class="check" type="submit" value="Search">
+            <p class="sep">OR</p>
+            <input type="button" class="location" value="Use location">
           </form>
 
 
@@ -58,6 +61,10 @@
   </section>
   <section class="forecast">
     <h2 class="mt-5 text-center location-header"></h2>
+    <div class=" container">
+      <div class="week-list row mt-5 text-center"></div>
+
+    </div>
     <div class="container weather-container">
       
     </div>

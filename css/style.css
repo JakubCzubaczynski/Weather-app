@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
 body{
   background-color: #84B7C5;
   font-family: Montserrat;
@@ -44,15 +54,16 @@ text-align:center;
 .hour-wrapper{
   
   text-align: center;
- margin:0 auto;
+
   margin-bottom: 20px;
   background-color: #ffffff;
   border-radius: 10px;
 }
 .forecast-row{
   background-color: #ffffff;
-  border-radius: 5px;
-  margin-top:30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
 }
 .lead-hour{
   font-weight:300;
@@ -61,4 +72,35 @@ text-align:center;
 .temp{
   font-weight: 800;
   font-size: 2rem;
+}
+.day-wrapper{
+  background-color: aliceblue;
+}
+.day-wrapper:hover{
+  background-color: #6B9FB5;
+  cursor:pointer;
+}
+.day-wrapper:active{
+  background-color: #6B9FB5
+ 
+}
+.hide{
+  display: none;
+}
+.animation{
+  animation: fadeIn 1s;
+}
+.location{
+  display: block;
+  margin: 0 auto;
+  margin-top:5px;
+}
+.sep{
+  margin:0;
+  padding:0;
+  margin-top:5px;
+  text-align: center;
+}
+.weather-container{
+  background-color: white;
 }
